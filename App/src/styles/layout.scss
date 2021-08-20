@@ -1,0 +1,32 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font: 62.5% 'Museo Slab 300',  sans-serif;
+    background-color: yellow;
+    background: url(/src/assets/images/boomerang-logo.svg);
+}
+
+#root > section {
+    background: #fff;
+    max-width: 132.6rem;
+    font-size: 1.6rem;
+    margin:0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    header{
+        background-color: gray;
+    }
+
+    main{
+        border:1px solid red;
+        flex: auto;
+    }
+
+    footer{
+        background:green;
+    }
+}
