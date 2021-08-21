@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "./../assets/images/logo.svg";
 
 const Header: FC = () => {
     return (
@@ -10,9 +9,16 @@ const Header: FC = () => {
                 <a href="https://boomarang.co.uk">Home page</a>
                 <span>TANTUM PROJECTS</span>
             </div>
-            <nav>
+            <nav className="boomerang-hand-holds">
+                <a className="menu" href="#">menu</a>
+            </nav>
+            <nav className="boomerang-desk-holds">
                 <ul>
-                    <li><Link to="/home">Home <img src={Logo} /></Link></li>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/home">About us   </Link></li>
+                    <li><Link to="/home">What we do   </Link></li>
+                    <li><Link to="/home">Projects   </Link></li>
+                    <li><Link to="/home">Blog</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>

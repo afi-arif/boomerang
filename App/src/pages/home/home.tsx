@@ -1,8 +1,7 @@
 import React, { FC } from "react";
-import MyImage from './../../assets/images/OIP.jpg';
 
 const Home: FC = () => {
-    return <main>Home <img src={MyImage} /></main>
+    return <main>Home page</main>
 }
 
 export default Home;
