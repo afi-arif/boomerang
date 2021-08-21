@@ -10,8 +10,10 @@ const config: webpack.Configuration = {
     entry: "./src/index.tsx",
     output: {
         path: path.resolve(__dirname, "build"),
-        filename: "[name].[contenthash].js",
+        filename: "[name].js",
         publicPath: "",
+        clean: true,
+        assetModuleFilename: "images/[name][ext][query]"
     },
     module: {
         rules: [
@@ -30,9 +32,11 @@ const config: webpack.Configuration = {
                 },
             },
             {
-                test: /\.(png|jpg|jpeg|gif)$/i,
+                test: /\.(png|jpg|jpeg|gif|svg)$/i,
                 type: "asset/resource",
+
             },
+
             {
                 test: /\.scss$/,
                 use: [{

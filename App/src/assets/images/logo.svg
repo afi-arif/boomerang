@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -14,8 +12,8 @@
    viewBox="0 0 500.00001 500.00001"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="puzzle.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="logo.svg"
    inkscape:export-filename="puzzle.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -34,12 +32,13 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="968"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     units="px">
+     units="px"
+     inkscape:document-rotation="0">
     <inkscape:grid
        type="xygrid"
        id="grid4138"
@@ -53,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -198,7 +197,7 @@
        id="path4217"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#d026e2;fill-opacity:1;stroke:none;stroke-width:3.90108752;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#d4aa00;fill-opacity:1;stroke:none;stroke-width:3.90108752;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 222.99799,732.68023 0,-47.30068 47.30069,0 47.30069,0 0,47.30068 0,47.30069 -47.30069,0 -47.30069,0 0,-47.30069 z"
        id="path4271"
        inkscape:connector-curvature="0" />
