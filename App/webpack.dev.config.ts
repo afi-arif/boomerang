@@ -18,7 +18,7 @@ const config: Configuration = {
         publicPath: "/",
         clean: true,
         chunkFilename: "named",
-        assetModuleFilename: "images/[name][ext][query]"
+        assetModuleFilename: "[path]/[name][ext][query]"
     },
     module: {
         rules: [

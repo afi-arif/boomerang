@@ -13,7 +13,7 @@ const config: webpack.Configuration = {
         filename: "[name].js",
         publicPath: "",
         clean: true,
-        assetModuleFilename: "images/[name][ext][query]"
+        assetModuleFilename: "[path]/[name][ext][query]"
     },
     module: {
         rules: [
