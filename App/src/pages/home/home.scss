@@ -33,6 +33,12 @@ main {
     }
 
     .boomerang-buy-2let{
+        display: flex;
+        flex-direction: column;
+        background: url($small + "signal-boomerang.jpg") no-repeat center bottom;
+        padding-bottom: 6.5rem;
+        margin-bottom: 3rem;
+
         .boomerang-2let-info{
             color: #176574;
             font: 1.2rem/1.4 'Museo Sans 300'; 
@@ -41,6 +47,40 @@ main {
 
             p{
                 margin-bottom: 2rem;
+            }
+        }
+        .boomerang-2let-video {
+            text-align: center;
+            img {
+                max-width: 26.5rem;
+            }
+            p{
+                font: 1.1rem/1 'Museo Sans 300'; 
+                padding-top: 1rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+    .boomerang-advantage-let{
+        background: url($small + "house-bg.jpg") no-repeat center bottom;
+        min-height: 36rem;
+
+        h2{
+            font:2.4rem/1 "Museo Slab 700";
+            color: #fff;
+            text-align: center;
+            padding: 2.5rem 4.2rem 3rem 4.2rem;
+        }
+        .boomerang-home-slide{
+            display: grid;
+            border: 1px solid red;
+            grid-template-columns: repeat(3, 21rem);
+            column-gap: 2rem;
+            justify-content: left;
+            padding-left: 4rem;
+
+            div{
+                background: #fff;
             }
         }
     }
@@ -65,6 +105,37 @@ main {
                 font:1.4rem/1.2 "Museo Sans 300";
             }
         }
+        .boomerang-buy-2let{
+            display: flex;
+            flex-direction: row;
+            padding-left: 3rem;
+            background: url($medium + "signal-boomerang.jpg") no-repeat center bottom;
+            padding-bottom: 7.5rem;
+            margin-bottom: 5rem;
+
+            .boomerang-2let-info{
+                font: 1.4rem/1.8 'Museo Sans 300'; 
+                p{
+                    margin-bottom: 3rem;
+                }
+            }
+            .boomerang-2let-video {
+                padding: 0 4.5rem 0 3rem;
+                p{
+                    font: 1.1rem/1 'Museo Sans 300'; 
+
+                }
+            }
+        }
+        .boomerang-advantage-let{
+            background: url($medium + "house-bg.jpg") no-repeat center bottom;
+            min-height: 58rem;
+
+            h2{
+                font:3.2rem/1 "Museo Slab 700";
+                padding: 4.5rem 0 3rem 0;
+            }
+        }
     }
 }
 
@@ -85,6 +156,36 @@ main {
             }
             p{
                 font:1.8rem/1.2 "Museo Sans 300";
+            }
+        }
+        .boomerang-buy-2let{
+            display: flex;
+            flex-direction: row;
+            padding-left: 3rem;
+            background: url($large + "signal-boomerang.jpg") no-repeat center bottom;
+            padding-bottom: 25rem;
+            margin-bottom: 7rem;
+
+            .boomerang-2let-info{
+                font: 1.6rem/2 'Museo Sans 300'; 
+                p{
+                    margin-bottom: 4rem;
+                }
+            }
+            .boomerang-2let-video {
+                padding: 0 4.5rem 0 3rem;               
+                img:first-of-type {
+                    max-width: 450px;
+                }
+            }
+        }
+        .boomerang-advantage-let{
+            background: url($large + "house-bg.jpg") no-repeat center bottom;
+            min-height: 76.6rem;
+
+            h2{
+                font:4.2rem/1 "Museo Slab 700";
+                padding: 6rem 0 6rem 0;
             }
         }
     }

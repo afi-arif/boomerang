@@ -1,6 +1,9 @@
 import React, { FC } from "react";
 import "./home.scss";
 import videoPlaceHolder from "./../../assets/images/large/video-place-holder.jpg";
+import smallboomerangLogo from "./../../assets/images/small/boomerang-logo.jpg";
+import mediumboomerangLogo from "./../../assets/images/medium/boomerang-logo.jpg";
+import largeboomerangLogo from "./../../assets/images/large/boomerang-logo.jpg";
 
 const Home: FC = () => {
     return (<main>
@@ -30,6 +33,20 @@ const Home: FC = () => {
             </div>
             <div className="boomerang-2let-video">
                 <img src={videoPlaceHolder} />
+                <p>WATCH OUR SHORT VIDEO</p>
+                <img src={smallboomerangLogo} srcSet={`${smallboomerangLogo} 360w, ${mediumboomerangLogo} 768w, ${largeboomerangLogo} 1366w  `} />
+                <br />
+                <br />
+            </div>
+
+        </div>
+        <div className="boomerang-advantage-let">
+            <h2>The Advantages of
+                Buy-to-Let Investment</h2>
+            <div className="boomerang-home-slide">
+                <div>one</div>
+                <div>two</div>
+                <div>thr</div>
             </div>
         </div>
     </main>)
