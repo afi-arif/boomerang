@@ -67,6 +67,8 @@ main {
         padding-bottom: 8.6rem;
         display: flex;
         flex-direction: column;
+        margin-bottom: 3.5rem;
+
         h2{
             font:2.4rem/1 "Museo Slab 700";
             color: #fff;
@@ -94,6 +96,64 @@ main {
                 }
                 background: #fff;
             }
+        }
+    }
+    .boomerang-unique{
+        margin-bottom: 3.5rem;
+         h2{
+            font:2.4rem/1 "Museo Slab 700";
+            color: #176574;
+            text-align: center;
+            padding: 0 3rem;
+            margin-bottom: 2.5rem;
+        }
+        .boomerang-unique-boxes{
+            display: grid;
+            grid-template-columns: repeat(1fr, 1);
+            margin:0 3rem;
+            background: url($small + "photo-couples.jpg") no-repeat, url($small + "photo-hand-shake.jpg") no-repeat right 24rem,
+            url($small + "photo-sky.jpg") no-repeat left 50rem, url($small + "photo-dogs.jpg") no-repeat right 75rem,
+            url($small + "photo-women.jpg") no-repeat left 98rem, url($small + "photo-hand-shake.jpg") no-repeat  right  bottom 5rem;
+            .boomerang-unique-box{
+                text-align: center;
+                padding: 2rem  1.5rem;
+                background: #fff;
+                h3{
+                    font:1.4rem/1 "Museo Sans 500";
+                    margin-bottom: 2rem;
+                }
+                p{
+                    font:1.3rem/1.4 "Museo Sans 300";
+                }
+            }
+            .boomerang-unique-box.box1{
+                margin-left: 8rem;
+                margin-top: 3.5rem;
+            }
+            .boomerang-unique-box.box2{
+                margin-top: 3.5rem;
+                margin-right: 7rem;
+            }
+            .boomerang-unique-box.box3{
+                margin-top: 4rem;
+                margin-left: 9.6rem;
+            }
+
+            .boomerang-unique-box.box4{
+                margin-top: 4rem;
+                margin-right: 8rem;
+            }
+
+            .boomerang-unique-box.box5{
+                margin-top: 1.5rem;
+                margin-left: 5rem;
+            }
+
+            .boomerang-unique-box.box6{
+                margin-top: 2rem;
+                margin-right: 6rem;
+            }
+            
         }
     }
 }
@@ -142,11 +202,19 @@ main {
         .boomerang-advantage-let{
             background: url($medium + "house-bg.jpg") no-repeat center top, url($small + "signal-boomerang.jpg") no-repeat center bottom;;
             min-height: 58rem;
+            margin-bottom: 5rem;
 
             h2{
                 font:3.2rem/1 "Museo Slab 700";
                 padding: 4.5rem 0 3rem 0;
             }
+        }
+        .boomerang-unique{
+         h2{
+            font:3.2rem/1 "Museo Slab 700";
+            padding: 0 17rem;
+            margin-bottom: 3.5rem;
+         }
         }
     }
 }
@@ -195,7 +263,8 @@ main {
             background: url($large + "house-bg.jpg") no-repeat center top, url($small + "signal-boomerang.jpg") no-repeat center bottom;;
             min-height: 76.6rem;
             padding-bottom: 18rem;
-            
+            margin-bottom: 10rem;
+
             .boomerang-home-slide{
                 justify-content: center;
                 height: 100%;
@@ -205,6 +274,12 @@ main {
                 font:4.2rem/1 "Museo Slab 700";
                 padding: 6rem 0 6rem 0;
             }
+        }
+        .boomerang-unique{
+         h2{
+            font:4.2rem/1 "Museo Slab 700";
+            margin-bottom: 7.5rem;
+         }
         }
     }
 

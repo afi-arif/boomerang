@@ -63,6 +63,35 @@ const Home: FC = () => {
                     Both corporations and individuals that invest in buy-to-let property know that this is a stable, comparatively straight forward approach to achieving a consistent long-term return on their investment.</div>
             </div>
         </div>
+        <div className="boomerang-unique">
+            <h2>What Makes Boomerang Buy to Let Unique?</h2>
+            <div className="boomerang-unique-boxes">
+                <div className="boomerang-unique-box box1">
+                    <h3>Unlock Your Deposit</h3>
+                    <p>Our approach allows for the quick release of anywhere between 50-100% of this deposit collateral after renovation and improvement works on the property have been completed and the property’s value has increased significantly, and capital appreciation is usually achieved within just 12 months or less.</p>
+                </div>
+                <div className="boomerang-unique-box box2">
+                    <h3>Exclusive Projects</h3>
+                    <p>We offer a full end-to-end service, and specialise in identifying the best development opportunities, often benefiting from advance access before public offerings, and pass these onto our clients with the goal of providing them with the greatest possible return on their investment.</p>
+                </div>
+                <div className="boomerang-unique-box box3">
+                    <h3>Increased Rental Yields</h3>
+                    <p>We can achieve up to 60% higher rental returns on your investment too, compared to the average</p>
+                </div>
+                <div className="boomerang-unique-box box4">
+                    <h3>Portfolio Expansion</h3>
+                    <p>This in turn allows our clients to reinvest their initial outlay into another property promptly, allowing for faster overall turnaround times and expedited portfolio expansion and so naturally, increased and expedited profits</p>
+                </div>
+                <div className="boomerang-unique-box box5">
+                    <h3>Finance</h3>
+                    <p>Additionally, Boomerang Buy to Let partners with a small, carefully chosen selection of well-known UK financial services providers to help to smooth the pathway for our clients when it comes to arranging financing for their buy-to-let property. Plus, we do not charge an arrangement fee for this either; representing a large saving compared to the industry standard charge of 1-1.5% of the property value.</p>
+                </div>
+                <div className="boomerang-unique-box box6">
+                    <h3>Earning Your Trust</h3>
+                    <p>Boomerang Buy to Let endeavours to develop long term working relationships with all our clients, guiding and nurturing the growth of every porftolio to develop strong, ongoing business relationships.</p>
+                </div>
+            </div>
+        </div>
     </main>)
 }
 
