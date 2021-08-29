@@ -62,9 +62,11 @@ main {
         }
     }
     .boomerang-advantage-let{
-        background: url($small + "house-bg.jpg") no-repeat center bottom;
+        background:  url($small + "house-bg.jpg") no-repeat center top, url($small + "signal-boomerang.jpg") no-repeat center bottom, #fff;
         min-height: 36rem;
-
+        padding-bottom: 8.6rem;
+        display: flex;
+        flex-direction: column;
         h2{
             font:2.4rem/1 "Museo Slab 700";
             color: #fff;
@@ -73,13 +75,23 @@ main {
         }
         .boomerang-home-slide{
             display: grid;
-            border: 1px solid red;
             grid-template-columns: repeat(3, 21rem);
             column-gap: 2rem;
             justify-content: left;
             padding-left: 4rem;
+            font: 1.6rem/1.31 "Museo Sans 300";
+            height: 100%;
+            flex: auto;
 
             div{
+                text-align: center;
+                min-width: 3rem;
+                padding: 5.6rem 2rem 0 2rem;
+                h3{
+                    font: 1.6rem/1.31 "Museo Sans 700";
+                    margin:1.5rem 0 2rem 0;
+
+                }
                 background: #fff;
             }
         }
@@ -128,7 +140,7 @@ main {
             }
         }
         .boomerang-advantage-let{
-            background: url($medium + "house-bg.jpg") no-repeat center bottom;
+            background: url($medium + "house-bg.jpg") no-repeat center top, url($small + "signal-boomerang.jpg") no-repeat center bottom;;
             min-height: 58rem;
 
             h2{
@@ -180,8 +192,14 @@ main {
             }
         }
         .boomerang-advantage-let{
-            background: url($large + "house-bg.jpg") no-repeat center bottom;
+            background: url($large + "house-bg.jpg") no-repeat center top, url($small + "signal-boomerang.jpg") no-repeat center bottom;;
             min-height: 76.6rem;
+            padding-bottom: 18rem;
+            
+            .boomerang-home-slide{
+                justify-content: center;
+                height: 100%;
+            }
 
             h2{
                 font:4.2rem/1 "Museo Slab 700";
