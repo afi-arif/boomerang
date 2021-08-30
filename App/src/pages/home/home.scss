@@ -210,11 +210,61 @@ main {
             }
         }
         .boomerang-unique{
-         h2{
-            font:3.2rem/1 "Museo Slab 700";
-            padding: 0 17rem;
-            margin-bottom: 3.5rem;
-         }
+            h2{
+                font:3.2rem/1 "Museo Slab 700";
+                padding: 0 17rem;
+                margin-bottom: 3.5rem;
+            }
+
+            .boomerang-unique-boxes{
+                display: grid;
+                grid-template-columns: repeat(1fr, 1);
+                margin:0 7rem;
+                background: url($large + "photo-couples.jpg") no-repeat, url($large + "photo-hand-shake.jpg") no-repeat right 24rem,
+                url($large + "photo-sky.jpg") no-repeat left 50rem, url($large + "photo-dogs.jpg") no-repeat right 75rem,
+                url($large + "photo-women.jpg") no-repeat left 98rem, url($large + "photo-hand-shake.jpg") no-repeat  right  bottom 5rem;
+                .boomerang-unique-box{
+                    text-align: center;
+                    padding: 2rem  1.5rem;
+                    background: #fff;
+                    h3{
+                        font:1.4rem/1 "Museo Sans 500";
+                        margin-bottom: 2rem;
+                    }
+                    p{
+                        font:1.3rem/1.4 "Museo Sans 300";
+                    }
+                }
+                .boomerang-unique-box.box1{
+                    margin-top: 3.5rem;
+                }
+                .boomerang-unique-box.box2{
+                    margin-top: 3.5rem;
+                }
+                .boomerang-unique-box.box3{
+                    margin-top: 4rem;
+                }
+
+                .boomerang-unique-box.box4,
+                .boomerang-unique-box.box5{
+                    margin-top: 4rem;
+                }
+
+                .boomerang-unique-box.box6{
+                    margin-top: 2rem;
+                }
+                .boomerang-unique-box.box1,
+                .boomerang-unique-box.box3,
+                .boomerang-unique-box.box5{
+                    margin-left: 28.5rem;
+                }
+                .boomerang-unique-box.box2,
+                .boomerang-unique-box.box4,
+                .boomerang-unique-box.box6{
+                    margin-right: 34rem;
+                }
+                
+            }
         }
     }
 }
@@ -276,10 +326,59 @@ main {
             }
         }
         .boomerang-unique{
-         h2{
-            font:4.2rem/1 "Museo Slab 700";
-            margin-bottom: 7.5rem;
-         }
+            h2{
+                font:4.2rem/1 "Museo Slab 700";
+                margin-bottom: 7.5rem;
+            }
+            .boomerang-unique-boxes{
+                display: grid;
+                grid-template-columns: repeat(1fr, 1);
+                margin:0 7rem;
+                background: url($large + "photo-couples.jpg") no-repeat, url($large + "photo-hand-shake.jpg") no-repeat right 24rem,
+                url($large + "photo-sky.jpg") no-repeat left 50rem, url($large + "photo-dogs.jpg") no-repeat right 75rem,
+                url($large + "photo-women.jpg") no-repeat left 98rem, url($large + "photo-hand-shake.jpg") no-repeat  right  bottom 5rem;
+                .boomerang-unique-box{
+                    text-align: center;
+                    padding: 2rem  1.5rem;
+                    background: #fff;
+                    h3{
+                        font:1.4rem/1 "Museo Sans 500";
+                        margin-bottom: 2rem;
+                    }
+                    p{
+                        font:1.3rem/1.4 "Museo Sans 300";
+                    }
+                }
+                .boomerang-unique-box.box1{
+                    margin-top: 3.5rem;
+                }
+                .boomerang-unique-box.box2{
+                    margin-top: 3.5rem;
+                }
+                .boomerang-unique-box.box3{
+                    margin-top: 4rem;
+                }
+
+                .boomerang-unique-box.box4,
+                .boomerang-unique-box.box5{
+                    margin-top: 4rem;
+                }
+
+                .boomerang-unique-box.box6{
+                    margin-top: 2rem;
+                }
+                .boomerang-unique-box.box1,
+                .boomerang-unique-box.box3,
+                .boomerang-unique-box.box5{
+                    margin-left: 28.5rem;
+                }
+                .boomerang-unique-box.box2,
+                .boomerang-unique-box.box4,
+                .boomerang-unique-box.box6{
+                    margin-right: 34rem;
+                }
+                
+            }
         }
     }
 
