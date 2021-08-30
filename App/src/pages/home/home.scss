@@ -109,7 +109,7 @@ main {
         }
         .boomerang-unique-boxes{
             display: grid;
-            grid-template-columns: repeat(1fr, 1);
+            grid-template-columns: 1fr;
             margin:0 3rem;
             background: url($small + "photo-couples.jpg") no-repeat, url($small + "photo-hand-shake.jpg") no-repeat right 24rem,
             url($small + "photo-sky.jpg") no-repeat left 50rem, url($small + "photo-dogs.jpg") no-repeat right 75rem,
@@ -218,7 +218,7 @@ main {
 
             .boomerang-unique-boxes{
                 display: grid;
-                grid-template-columns: repeat(1fr, 1);
+                grid-template-columns: 1fr;
                 margin:0 7rem;
                 background: url($large + "photo-couples.jpg") no-repeat, url($large + "photo-hand-shake.jpg") no-repeat right 24rem,
                 url($large + "photo-sky.jpg") no-repeat left 50rem, url($large + "photo-dogs.jpg") no-repeat right 75rem,
@@ -326,16 +326,19 @@ main {
             }
         }
         .boomerang-unique{
+            background-color: yellow;
             h2{
                 font:4.2rem/1 "Museo Slab 700";
                 margin-bottom: 7.5rem;
             }
             .boomerang-unique-boxes{
                 display: grid;
-                grid-template-columns: repeat(1fr, 1);
-                margin:0 7rem;
-                background: url($large + "photo-couples.jpg") no-repeat, url($large + "photo-hand-shake.jpg") no-repeat right 24rem,
-                url($large + "photo-sky.jpg") no-repeat left 50rem, url($large + "photo-dogs.jpg") no-repeat right 75rem,
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                margin:0 19rem;
+                height: 100rem;
+                background: url($large + "photo-couples.jpg") no-repeat, url($large + "photo-hand-shake.jpg") no-repeat right top,
+                url($large + "photo-sky.jpg") no-repeat center 24.5rem, url($large + "photo-dogs.jpg") no-repeat right 75rem,
                 url($large + "photo-women.jpg") no-repeat left 98rem, url($large + "photo-hand-shake.jpg") no-repeat  right  bottom 5rem;
                 .boomerang-unique-box{
                     text-align: center;
@@ -346,37 +349,41 @@ main {
                         margin-bottom: 2rem;
                     }
                     p{
-                        font:1.5rem/1.4 "Museo Sans 300";
+                        font:1.4rem/1.4 "Museo Sans 300";
                     }
                 }
                 .boomerang-unique-box.box1{
-                    margin-top: 3.5rem;
+                    grid-row: 1;
+                    grid-column: 2/3;
                 }
                 .boomerang-unique-box.box2{
-                    margin-top: 3.5rem;
+                    grid-row: 2;
+                    grid-column: 3/3;
                 }
                 .boomerang-unique-box.box3{
-                    margin-top: 4rem;
+                    grid-row: 2;
+                    grid-column: 1/1;
                 }
-
-                .boomerang-unique-box.box4,
+                .boomerang-unique-box.box4{
+                    grid-row: 3;
+                    grid-column: 2/3;
+                }
                 .boomerang-unique-box.box5{
-                    margin-top: 4rem;
+                    grid-row: 4;
+                    grid-column: 3/3;
                 }
-
                 .boomerang-unique-box.box6{
-                    margin-top: 2rem;
+                    grid-row: 4;
+                    grid-column: 1/1;
                 }
                 .boomerang-unique-box.box1,
-                .boomerang-unique-box.box3,
-                .boomerang-unique-box.box5{
-                    margin-left: 28.5rem;
-                }
                 .boomerang-unique-box.box2,
+                .boomerang-unique-box.box3,
                 .boomerang-unique-box.box4,
+                .boomerang-unique-box.box5,
                 .boomerang-unique-box.box6{
-                    margin-right: 34rem;
-                }
+                   margin: 0;
+                }               
                 
             }
         }
