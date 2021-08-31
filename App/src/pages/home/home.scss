@@ -326,7 +326,6 @@ main {
             }
         }
         .boomerang-unique{
-            background-color: yellow;
             h2{
                 font:4.2rem/1 "Museo Slab 700";
                 margin-bottom: 7.5rem;
@@ -338,8 +337,8 @@ main {
                 margin:0 19rem;
                 height: 100rem;
                 background: url($large + "photo-couples.jpg") no-repeat, url($large + "photo-hand-shake.jpg") no-repeat right top,
-                url($large + "photo-sky.jpg") no-repeat center 24.5rem, url($large + "photo-dogs.jpg") no-repeat right 75rem,
-                url($large + "photo-women.jpg") no-repeat left 98rem, url($large + "photo-hand-shake.jpg") no-repeat  right  bottom 5rem;
+                url($large + "photo-sky.jpg") no-repeat center 24.5rem, url($large + "photo-dogs.jpg") no-repeat left 48rem,
+                url($large + "photo-women.jpg") no-repeat right 48rem, url($large + "photo-hand-shake.jpg") no-repeat  center  bottom 2rem;
                 .boomerang-unique-box{
                     text-align: center;
                     padding: 2rem  1.5rem;
@@ -352,6 +351,14 @@ main {
                         font:1.4rem/1.4 "Museo Sans 300";
                     }
                 }
+                .boomerang-unique-box.box1,
+                .boomerang-unique-box.box2,
+                .boomerang-unique-box.box3,
+                .boomerang-unique-box.box4,
+                .boomerang-unique-box.box5,
+                .boomerang-unique-box.box6{
+                   margin: 0;
+                }    
                 .boomerang-unique-box.box1{
                     grid-row: 1;
                     grid-column: 2/3;
@@ -371,19 +378,19 @@ main {
                 .boomerang-unique-box.box5{
                     grid-row: 4;
                     grid-column: 3/3;
+                    width: 120%;
+                    height: fit-content;
+                    padding-left: 3rem;
+                    margin-left: -33%;
+                    margin-top: 1rem;
                 }
                 .boomerang-unique-box.box6{
                     grid-row: 4;
                     grid-column: 1/1;
+                    padding-top: 3rem;
+                    margin:-3rem 2rem 0 2rem;
                 }
-                .boomerang-unique-box.box1,
-                .boomerang-unique-box.box2,
-                .boomerang-unique-box.box3,
-                .boomerang-unique-box.box4,
-                .boomerang-unique-box.box5,
-                .boomerang-unique-box.box6{
-                   margin: 0;
-                }               
+                           
                 
             }
         }
