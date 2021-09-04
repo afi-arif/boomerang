@@ -10,6 +10,11 @@ const Header: FC = () => {
         setShow(!show);
     }
 
+    const CloseView = () => {
+        if (!show) return;
+        setShow(false);
+    }
+
     return (
         <header>
             <div className="boomerang-site-logo">
@@ -17,9 +22,9 @@ const Header: FC = () => {
                 <span>TANTUM PROJECTS</span>
             </div>
             <nav className={"boomerang-hand-holds" + (show ? ' active' : '')} >
-                <div className="menu-backscreen">
+                <div className="menu-backscreen" onClick={CloseView}>
                     <div className="navi-holder">
-                        <a className="menu" onClick={ShuffleView} href="#">menu</a>
+                        <a className="menu" onClick={ShuffleView}>menu</a>
                         <ul>
                             <li><Link to="/home">Home</Link></li>
                             <li><Link to="/home">About us   </Link></li>

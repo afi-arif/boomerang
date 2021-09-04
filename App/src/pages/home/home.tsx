@@ -10,7 +10,7 @@ import iconHouse from "./../../assets/images/small/icon-house.png";
 import iconInverst from "./../../assets/images/small/icon-inverst.png";
 
 const Home: FC = () => {
-    return (<main>
+    return (<main className="boomerang-home">
         <div className="boomerang-first-throw">
             <div className="boomerang-headline">
                 <h1>
