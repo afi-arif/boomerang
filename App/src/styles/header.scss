@@ -33,29 +33,96 @@ header{
         }
     }
 
-    nav.boomerang-hand-holds{
+     nav.boomerang-hand-holds{
+
+        .menu-backscreen {
+            display: inline-block;
+            justify-content: right;
+            margin-bottom: 1rem;
+            
+            .navi-holder {   
+                display: flex;
+                flex-direction: column;
+                
+                .menu{
+                    background: url($small + 'icon-menu.svg') no-repeat;
+                    width: 2.6rem;
+                    height: 1.6rem;
+                    text-indent: -1000%;
+                    overflow: hidden;
+                    display: inline-block;
+                    margin-left: auto;
+                }
+
+                ul {
+                    display: none;
+                    li a{
+                        color: #000;
+                        font: 1.4rem/1 'Museo Sans 300';
+                        text-decoration: none;
+                        padding:1rem 2rem;
+                        display: block;
+
+                        &:hover {
+                            background: rgba($color: #176574, $alpha: 1.0);
+                            color: #fff;
+                        }
+                    }
+                   
+                }
+            }
+
+ 
+        }
+
+    }
+
+
+    nav.boomerang-hand-holds.active{
 
         .menu-backscreen {
             position: fixed;
-            background: rgba($color: #000000, $alpha: 0.5);
+            background: rgba($color: #000000, $alpha: 0.2);
             inset: 0 0 0 0;
+            justify-content: right;
             display: flex;
+            height: 100vh;
+            
+            .navi-holder {   
+                display: flex;
+                flex-direction: column;
+                padding-top: 3.5rem;
+                background: #fff;
+                .menu{
+                    background: url($small + 'tantum-nav-close-btn.svg') no-repeat;
+                    width: 2.6rem;
+                    height: 1.6rem;
+                    text-indent: -1000%;
+                    overflow: hidden;
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-bottom: 3rem;
+                    margin-right: 3rem;
+                }
 
-            .menu{
-                background: url($small + 'icon-menu.svg') no-repeat;
-                width: 2.6rem;
-                height: 1.6rem;
-                text-indent: -1000%;
-                overflow: hidden;
-                display: inline-block;
-                position: relative;
-                top: -1rem;
-                margin-left: auto;
-            }
+                ul {
+                    display: block;
+                    li a{
+                        color: #000;
+                        font: 1.4rem/1 'Museo Sans 300';
+                        text-decoration: none;
+                        padding:1rem 3rem;
+                        display: block;
 
-            ul {
-                margin-left: auto;
+                        &:hover {
+                            background: rgba($color: #176574, $alpha: 1.0);
+                            color: #fff;
+                        }
+                    }
+                   
+                }
             }
+            
             
         }
 
