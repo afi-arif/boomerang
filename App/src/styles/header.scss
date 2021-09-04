@@ -1,3 +1,7 @@
+$small : "./../assets/images/small/";
+$medium : "./../assets/images/medium/";
+$large: "./../assets/images/large/";
+
 header{
 
     display: flex;
@@ -11,7 +15,7 @@ header{
     div.boomerang-site-logo{
         
         a{
-            background: url(/src/assets/images/boomerang-logo.svg) no-repeat;
+            background: url("./../assets/images/boomerang-logo.svg") no-repeat;
             width: 7.3rem;
             height: 6.5rem;
             display: inline-block;
@@ -29,15 +33,32 @@ header{
         }
     }
 
-    .menu{
-        background: url(/src/assets/images/medium/icon-menu.svg) no-repeat;
-        width: 2.6rem;
-        height: 1.6rem;
-        text-indent: -1000%;
-        overflow: hidden;
-        display: inline-block;
-        position: relative;
-        top: -1rem;
+    nav.boomerang-hand-holds{
+
+        .menu-backscreen {
+            position: fixed;
+            background: rgba($color: #000000, $alpha: 0.5);
+            inset: 0 0 0 0;
+            display: flex;
+
+            .menu{
+                background: url($small + 'icon-menu.svg') no-repeat;
+                width: 2.6rem;
+                height: 1.6rem;
+                text-indent: -1000%;
+                overflow: hidden;
+                display: inline-block;
+                position: relative;
+                top: -1rem;
+                margin-left: auto;
+            }
+
+            ul {
+                margin-left: auto;
+            }
+            
+        }
+
     }
 }
 
