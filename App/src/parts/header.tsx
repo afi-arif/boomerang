@@ -1,18 +1,25 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import "./../styles/header.scss";
 
 const Header: FC = () => {
+
+    const [show, setShow] = useState(false);
+
+    const ShuffleView = () => {
+        setShow(!show);
+    }
+
     return (
         <header>
             <div className="boomerang-site-logo">
                 <a href="https://boomarang.co.uk">Home page</a>
                 <span>TANTUM PROJECTS</span>
             </div>
-            <nav className="boomerang-hand-holds active">
+            <nav className={"boomerang-hand-holds" + (show ? ' active' : '')} >
                 <div className="menu-backscreen">
                     <div className="navi-holder">
-                        <a className="menu" href="#">menu</a>
+                        <a className="menu" onClick={ShuffleView} href="#">menu</a>
                         <ul>
                             <li><Link to="/home">Home</Link></li>
                             <li><Link to="/home">About us   </Link></li>
