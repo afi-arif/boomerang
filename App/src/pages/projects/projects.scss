@@ -17,14 +17,18 @@ main.boomerang-projects{
         }
     }
     .boomerang-projects-info{
+        
         .boomerang-slide-holder{
             display: flex;
             flex-direction: column;
+
+            .slider-column{
+                padding: 0 2.5rem 3rem 5rem;
+            }
         }
         .slider{
             display: flex;
             justify-content: center;
-            border: 1px solid red;
             margin-bottom: 4rem;
             a{
                 text-indent: -1000rem;
@@ -61,6 +65,31 @@ main.boomerang-projects{
                 margin-top: 7rem;
             }
         }
+        .boomerang-projects-info{
+            .boomerang-slide-holder{
+                flex-direction: row;
+                justify-content: right;
+
+                .slider{
+                    margin-top: 6rem;
+                }
+            }
+            .slider-column{
+                flex: 0 0 57.5%;
+                padding: 0 2.5rem 3rem 5rem;
+            }
+
+            .slider{
+            
+                margin-bottom: 4rem;
+                justify-content: space-between;
+           
+                h2{
+                    font:2.2rem/0.8 "Museo Sans 700";
+                    margin: 0;
+                 }
+            }
+        }
     }
 }
 
@@ -73,6 +102,39 @@ main.boomerang-projects{
                 font:4.8rem/1 "Museo Slab 700";
                 margin-right: 20rem;
                 margin-top: 7rem;
+            }
+        }
+        .boomerang-projects-info{
+            .boomerang-slide-holder{
+                flex-direction: row;
+                justify-content: right;
+
+                .slider-column{
+                    flex: 0 0 59.4%;
+                    padding: 0 12rem 2rem 18rem;
+                }   
+
+                .slider{
+                    margin-top: 6rem;
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                }
+            }
+            
+            .slider{
+            
+                margin-bottom: 4rem;
+                justify-content: space-between;
+
+                a{
+                    width: 1.9rem;
+                    height: 2.2rem;
+                }
+           
+                h2{
+                    font:2.8rem/0.8 "Museo Sans 700";
+                    margin: 0;
+                 }
             }
         }
     }
