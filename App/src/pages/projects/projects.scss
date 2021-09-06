@@ -106,11 +106,12 @@ main.boomerang-projects{
         }
         .boomerang-projects-info{
             .boomerang-slide-holder{
+                padding-top: 5rem;
                 flex-direction: row;
                 justify-content: right;
 
                 .slider-column{
-                    flex: 0 0 59.4%;
+                    flex: 0 0 47%;
                     padding: 0 12rem 2rem 18rem;
                 }   
 
@@ -125,6 +126,7 @@ main.boomerang-projects{
             
                 margin-bottom: 4rem;
                 justify-content: space-between;
+                padding-bottom: 2rem;
 
                 a{
                     width: 1.9rem;
