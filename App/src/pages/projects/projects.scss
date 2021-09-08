@@ -3,6 +3,7 @@ $medium : "./../../assets/images/medium/";
 $large: "./../../assets/images/large/";
 
 main.boomerang-projects{
+    
     .boomerang-projects-flash{
         background: url($small + 'boomerang-projects-flash.jpg') no-repeat;
         height: 26.9rem;
@@ -21,10 +22,6 @@ main.boomerang-projects{
         .boomerang-slide-holder{
             display: flex;
             flex-direction: column;
-
-            .slider-column{
-                padding: 0 2.5rem 3rem 5rem;
-            }
         }
         .slider{
             display: flex;

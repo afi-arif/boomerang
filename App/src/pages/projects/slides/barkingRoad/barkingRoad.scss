@@ -1,12 +1,70 @@
-.project-slide{
-    p{
-        font-size: 1.2rem;
-        line-height: 1.3;
-        margin-bottom: 2rem;
+$small : "./../../../../assets/images/small/";
+$medium : "./../../../../assets/images/medium/";
+$large: "./../../../../assets/images/large/";
+
+.boomerang-slider-barkingRoad{
+    background: url($small + "bg-BarkingRoad.jpg") no-repeat right 2rem top 18rem;
+    padding: 0 0 3rem 2.5rem;
+
+    .project-info{
+        background: #fff;
+        padding: 0 2.5rem 2rem; 
+        margin-bottom: 4.5rem;
+        p{
+            font-size: 1.2rem;
+            line-height: 1.3;
+            margin-bottom: 2rem;
+        }
     }
+
+    .project-data{
+        background: #fff;
+        padding: 2.5rem 2.5rem 2rem; 
+        border-collapse: separate;
+        border-spacing: 0;
+
+        table {
+            font:0.7rem/1 'Museo Sans 300';
+            width: 100%;
+
+            th,td{
+                 padding: 0.5rem;
+                 white-space: nowrap;
+                 text-align: left;
+                 border-right:1px solid #fff;
+            }
+
+            th:last-of-type,
+            td:last-of-type{
+                text-align: right;
+            }
+
+            thead tr {
+                background: #4472c8;
+                th{
+                    color: #fff;
+                }
+            }
+
+            tbody {
+                tr:nth-child(odd){
+                    background: #ccd3e9;
+                }
+                tr:nth-child(even){
+                    background: #e8ecf5;
+                }
+            }
+        }
+    }
+
 }
 
+
 @media screen and (min-width:768px) and (max-width:1023px) {
+    .boomerang-slider-barkingRoad{
+        background: url($medium + "bg-BarkingRoad.jpg") no-repeat right 1rem top 18rem;
+        padding: 0 0 3rem 2.5rem;
+
         .project-slide{
             p{
                 font-size: 1.4rem;
@@ -17,6 +75,7 @@
                 margin-bottom: 0;
             }
         }
+    }
 }
 
 
