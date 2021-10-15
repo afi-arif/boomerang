@@ -12,7 +12,6 @@ interface Configuration extends WebpackConfiguration {
 
 const config: Configuration = {
     mode: "development",
-
     entry: "./src/index.tsx",
     output: {
         publicPath: "/",
@@ -38,6 +37,7 @@ const config: Configuration = {
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/i,
+                dependency: { not: ['url'] },
                 type: "asset/resource"
             },
             {

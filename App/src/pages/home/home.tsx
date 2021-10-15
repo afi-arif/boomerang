@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, ReactElement } from "react";
 import "./home.scss";
 import videoPlaceHolder from "./../../assets/images/large/video-place-holder.jpg";
 import smallboomerangLogo from "./../../assets/images/small/boomerang-logo.jpg";
@@ -9,7 +9,7 @@ import iconGraph from "./../../assets/images/small/icon-graph.png";
 import iconHouse from "./../../assets/images/small/icon-house.png";
 import iconInverst from "./../../assets/images/small/icon-inverst.png";
 
-const Home: FC = () => {
+const Home: FC = (): ReactElement => {
     return (<main className="boomerang-home">
         <div className="boomerang-first-throw">
             <div className="boomerang-headline">

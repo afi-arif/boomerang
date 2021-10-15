@@ -27,6 +27,7 @@ main.boomerang-projects{
             display: flex;
             justify-content: center;
             margin-bottom: 4rem;
+           
             a{
                 text-indent: -1000rem;
                 display: inline-block;
@@ -72,16 +73,15 @@ main.boomerang-projects{
                 }
             }
             .slider-column{
-                flex: 0 0 57.5%;
-                padding: 0 2.5rem 3rem 5rem;
+                flex: 0 0 67%;
+                padding: 0 2.5rem 3rem 0;
             }
 
             .slider{
-            
-                margin-bottom: 4rem;
+                margin: 5rem;
                 justify-content: space-between;
            
-                h2{
+                h2{ 
                     font:2.2rem/0.8 "Museo Sans 700";
                     margin: 0;
                  }
@@ -108,14 +108,15 @@ main.boomerang-projects{
                 justify-content: right;
 
                 .slider-column{
-                    flex: 0 0 47%;
-                    padding: 0 12rem 2rem 18rem;
+                    flex: 0 0 62%;
+                    padding: 0 2rem 2rem 18rem;
                 }   
 
-                .slider{
+                .slider{    
                     margin-top: 6rem;
                     margin-left: 5rem;
                     margin-right: 5rem;
+
                 }
             }
             

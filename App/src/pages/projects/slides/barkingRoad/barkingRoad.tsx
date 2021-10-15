@@ -1,7 +1,15 @@
-import React, { FC } from "react";
+import React, { FC, } from "react";
 import "./barkingRoad.scss";
 
+// import slide from "./../../../../assets/images/small/boomerang-site1.jpg";
+
 const BarkingRoad: FC = () => {
+
+
+
+    // const imgURL = "/src/assets/images/small/boomerang-site1.jpg";
+    const imgURL = "/src/assets/images/small/video-place-holder.jpg";
+
     return (
         <div className="boomerang-slider-barkingRoad">
             <div className="project-info">
@@ -108,7 +116,16 @@ const BarkingRoad: FC = () => {
                         </tr>
                     </tbody>
                 </table>
+                <div className="boomerang-site-slide">
+                    <div className="prev"><a href="#">Previus</a> </div>
+                    <div>
+                        <img src={imgURL} />
+                    </div>
+                    <div className="next"><a href="#">Next</a> </div>
+                    {/* srcSet={`${slide} 360w, ${slide} 768w, ${slide} 1366w  `} */}
+                </div>
             </div>
+
         </div>
     )
 }

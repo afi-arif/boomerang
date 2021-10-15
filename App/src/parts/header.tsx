@@ -27,7 +27,7 @@ const Header: FC = () => {
                         <a className="menu" onClick={ShuffleView}>menu</a>
                         <ul>
                             <li><Link to="/home">Home</Link></li>
-                            <li><Link to="/home">About us   </Link></li>
+                            <li><Link to="/about-us">About us   </Link></li>
                             <li><Link to="/home">What we do   </Link></li>
                             <li><Link to="/projects">Projects   </Link></li>
                             <li><Link to="/home">Blog</Link></li>
@@ -39,7 +39,7 @@ const Header: FC = () => {
             <nav className="boomerang-desk-holds">
                 <ul>
                     <li><Link to="/home">Home</Link></li>
-                    <li><Link to="/home">About us   </Link></li>
+                    <li><Link to="/about-us">About us   </Link></li>
                     <li><Link to="/home">What we do   </Link></li>
                     <li><Link to="/projects">Projects   </Link></li>
                     <li><Link to="/home">Blog</Link></li>

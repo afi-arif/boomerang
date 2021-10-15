@@ -33,6 +33,7 @@ const config: webpack.Configuration = {
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/i,
+                dependency: { not: ['url'] },
                 type: "asset/resource",
 
             },
@@ -52,6 +53,7 @@ const config: webpack.Configuration = {
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
     },
+    externals: [],
     plugins: [
         new HtmlWebpackPlugin({
             template: "src/index.html",

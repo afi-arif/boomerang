@@ -1,0 +1,99 @@
+$small : "./../../assets/images/small/";
+$medium : "./../../assets/images/medium/";
+$large: "./../../assets/images/large/";
+
+main.boomerang-about-us {
+    .boomerang-flash{
+        background: url($small+'about-us-flash.jpg') no-repeat;
+        min-height: 32rem;
+
+        .boomerang-contact{
+            padding-top: 2rem;
+                h1{
+                    color: #ffffff;
+                    font:2.4rem/1.1 "Museo Slab 700";
+                    text-align: center;
+                    margin-bottom: 3rem;
+                }
+                form{
+
+                    margin:0 3rem 0 3rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    label:first-of-type{
+                        flex: 1 0 80%;
+                        input[type=text]{
+                            border: 0;
+                        }
+                        
+                    }
+                    label{
+                        flex: 0 0 45%;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    input[type=text]{
+                        padding: 1rem 0.5rem;
+                        width: 100%;   
+                        box-sizing: border-box; 
+                    }
+
+                    button{
+                        background: transparent;
+                        border-color: #fff;
+                        padding: 1rem 3.5rem;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                    
+                }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    main.boomerang-about-us {
+        .boomerang-flash{
+            background: url($medium+'about-us-flash.jpg') no-repeat;
+            .boomerang-contact{
+                margin-left: 25rem;
+                h1{
+                    color: #ffffff;
+                    font:3.2rem/1.1 "Museo Slab 700";
+                    text-align: center;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width:1024px) {
+    main.boomerang-about-us {
+        .boomerang-flash{
+            background: url($large+'about-us-flash.jpg') no-repeat;
+            .boomerang-contact{
+                margin-left: 60rem;
+                padding-top: 8rem;
+
+                h1{
+                    color: #ffffff;
+                    font:4.2rem/1.5 "Museo Slab 700";
+                    text-align: center;
+                    margin-bottom: 3rem;
+                }
+                form {
+                    margin:0 14rem 0 6rem;
+
+                    button{
+                        padding: 2rem 7.5rem;
+                    }
+                }
+            }
+        }
+        
+    }
+}
