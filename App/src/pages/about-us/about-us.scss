@@ -53,12 +53,20 @@ main.boomerang-about-us {
     }
 
     div.boomerang-details-about-us{
-        margin:-3.5rem 28% 0 12%;
-        padding-top: 3.5rem;
-        background: #fff;
+        margin-top: -2.5rem;
+        background:  url($small+'rental.jpg') no-repeat center bottom;
+        padding-bottom: 15rem;
+
+        .details-block:first-of-type{
+            padding-top: 3.5rem;
+        }
 
         .details-block{
             padding: 1rem;
+            background: #fff;
+            margin:0rem 20% 0 12%;
+            text-align: justify;
+
             h2{
                 font:1.8rem/1 "Museo Slab 700";
                 color: #000;
@@ -83,6 +91,17 @@ main.boomerang-about-us {
                     font:3.2rem/1.1 "Museo Slab 700";
                     text-align: center;
                     margin-bottom: 3rem;
+                }
+            }
+        }
+        div.boomerang-details-about-us{
+            background:  url($medium+'rental.jpg') no-repeat center bottom;
+            padding-bottom: 20rem;
+            .details-block{
+                margin:0rem 13% 0 8%;
+                padding: 2rem;
+                p{
+                    font: 1.6rem/1.2 'Museo Sans 300'; 
                 }
             }
         }
@@ -111,6 +130,26 @@ main.boomerang-about-us {
                     button{
                         padding: 2rem 7.5rem;
                     }
+                }
+            }
+        }
+
+        div.boomerang-details-about-us{
+            margin-top: -5rem;
+            background:  url($large+'rental.jpg') no-repeat center bottom;
+            padding-bottom: 45rem;
+
+            .details-block:first-of-type{
+                padding-top: 5.5rem;
+            }
+
+
+            .details-block{
+                margin:0rem 13% 0 8%;
+                padding: 3rem;
+
+                p{
+                    font: 1.6rem/1.6 'Museo Sans 300'; 
                 }
             }
         }
