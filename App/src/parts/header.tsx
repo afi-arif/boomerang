@@ -28,7 +28,7 @@ const Header: FC = () => {
                         <ul>
                             <li><Link to="/home">Home</Link></li>
                             <li><Link to="/about-us">About us   </Link></li>
-                            <li><Link to="/home">What we do   </Link></li>
+                            <li><Link to="/what-we-do">What we do   </Link></li>
                             <li><Link to="/projects">Projects   </Link></li>
                             <li><Link to="/home">Blog</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
@@ -40,7 +40,7 @@ const Header: FC = () => {
                 <ul>
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="/about-us">About us   </Link></li>
-                    <li><Link to="/home">What we do   </Link></li>
+                    <li><Link to="/what-we-do">What we do   </Link></li>
                     <li><Link to="/projects">Projects   </Link></li>
                     <li><Link to="/home">Blog</Link></li>
                     <li><Link to="/contact">Contact</Link></li>

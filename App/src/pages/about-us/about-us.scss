@@ -78,6 +78,45 @@ main.boomerang-about-us {
             }
         }
     }
+
+    .boomerang-the-team{
+        padding-top: 5rem;
+        padding:0 7%;
+        
+        .boomerang-team{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+             
+
+            .boomerang-member{
+                flex: 0 0 14rem;
+                min-height: 14rem;
+                margin-bottom: 4rem;
+            }
+            .boomerang-member.the-md{
+                background: url($small+'tantum-managing-director.jpg');
+            }
+            .boomerang-member.the-crm{
+                background: url($small+'tantum-relation-ship-manager.jpg');
+            }
+            .boomerang-member.the-pm{
+                background: url($small+'tantum-project-manager.jpg');
+            }
+            .boomerang-member.the-fc{
+                background: url($small+'tantum-finance-controller.jpg');
+            }
+            .boomerang-member.the-mm{
+                background: url($small+'tantum-marketing-manager.jpg');
+            }
+            .boomerang-member.the-oa{
+                background: url($small+'tantum-office-admin.jpg');
+            }
+            .boomerang-member.the-pd{
+                background: url($small+'tantum-product-dev-manager.jpg');
+            }
+        }
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -105,6 +144,8 @@ main.boomerang-about-us {
                 }
             }
         }
+
+        
         
     }
 }

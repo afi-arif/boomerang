@@ -1,6 +1,7 @@
 import React, { FC, ReactElement } from 'react';
 import './about-us.scss';
 
+
 const AboutUs: FC = (): ReactElement => {
     return (
         <main className="boomerang-about-us">
@@ -33,6 +34,20 @@ const AboutUs: FC = (): ReactElement => {
                     <h2>Our Promise</h2>
 
                     <p>  Put simply, we believe that our expertise and industry insights allow us to offer niche properties with high income and asset appreciation potential, whilst remaining low-risk propositions for depreciation or loss.</p>
+                </div>
+            </div>
+            <div className="boomerang-the-team">
+                <h2>OurTeam</h2>
+                <div className="boomerang-team">
+                    <div className="boomerang-member the-md">
+                        
+                    </div>
+                    <div className="boomerang-member the-crm"></div>
+                    <div className="boomerang-member the-pm"></div>
+                    <div className="boomerang-member the-fc"></div>
+                    <div className="boomerang-member the-mm"></div>
+                    <div className="boomerang-member the-oa"></div>
+                    <div className="boomerang-member the-pd"></div>
                 </div>
             </div>
         </main>
