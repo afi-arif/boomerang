@@ -5,7 +5,7 @@ $large: "./../../assets/images/large/";
 main.boomerang-about-us {
     .boomerang-flash{
         background: url($small+'about-us-flash.jpg') no-repeat;
-        min-height: 32rem;
+        min-height: 32.6rem;
 
         .boomerang-contact{
             padding-top: 2rem;
@@ -51,6 +51,25 @@ main.boomerang-about-us {
                 }
         }
     }
+
+    div.boomerang-details-about-us{
+        margin:-3.5rem 28% 0 12%;
+        padding-top: 3.5rem;
+        background: #fff;
+
+        .details-block{
+            padding: 1rem;
+            h2{
+                font:1.8rem/1 "Museo Slab 700";
+                color: #000;
+            }
+            p{
+                font: 1.4rem/1.2 'Museo Sans 300'; 
+                padding-top: 1rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -75,6 +94,7 @@ main.boomerang-about-us {
     main.boomerang-about-us {
         .boomerang-flash{
             background: url($large+'about-us-flash.jpg') no-repeat;
+            min-height: 58rem;
             .boomerang-contact{
                 margin-left: 60rem;
                 padding-top: 8rem;
@@ -94,6 +114,8 @@ main.boomerang-about-us {
                 }
             }
         }
+
+        
         
     }
 }
