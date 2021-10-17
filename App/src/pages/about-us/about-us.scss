@@ -80,6 +80,12 @@ main.boomerang-about-us {
     }
 
     .boomerang-the-team{
+         h2{
+            font:2.4rem/1 "Museo Slab 700";
+            color: #176574;
+            padding: 2.5rem 4.2rem 3rem 0rem;
+        }
+
         padding-top: 5rem;
         padding:0 7%;
         
@@ -87,33 +93,41 @@ main.boomerang-about-us {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-             
+            gap:4rem;
+            margin-bottom: 4rem;
 
             .boomerang-member{
                 flex: 0 0 14rem;
-                min-height: 14rem;
-                margin-bottom: 4rem;
+                padding-top: 14rem;
+            }
+            h3{
+                padding-top: 0.5rem;
+                font-size: 1.6rem;
+            }
+            h3+span{
+                color: gray;
+                font-size: 1.4rem;
             }
             .boomerang-member.the-md{
-                background: url($small+'tantum-managing-director.jpg');
+                background: url($small+'tantum-managing-director.jpg') no-repeat;
             }
             .boomerang-member.the-crm{
-                background: url($small+'tantum-relation-ship-manager.jpg');
+                background: url($small+'tantum-relation-ship-manager.jpg') no-repeat;
             }
             .boomerang-member.the-pm{
-                background: url($small+'tantum-project-manager.jpg');
+                background: url($small+'tantum-project-manager.jpg') no-repeat;
             }
             .boomerang-member.the-fc{
-                background: url($small+'tantum-finance-controller.jpg');
+                background: url($small+'tantum-finance-controller.jpg') no-repeat;
             }
             .boomerang-member.the-mm{
-                background: url($small+'tantum-marketing-manager.jpg');
+                background: url($small+'tantum-marketing-manager.jpg') no-repeat;
             }
             .boomerang-member.the-oa{
-                background: url($small+'tantum-office-admin.jpg');
+                background: url($small+'tantum-office-admin.jpg') no-repeat;
             }
             .boomerang-member.the-pd{
-                background: url($small+'tantum-product-dev-manager.jpg');
+                background: url($small+'tantum-product-dev-manager.jpg') no-repeat;
             }
         }
     }
@@ -145,7 +159,60 @@ main.boomerang-about-us {
             }
         }
 
+    .boomerang-the-team{
         
+        h2{
+            font:2.4rem/1 "Museo Slab 700";
+            color: #176574;
+            padding: 2.5rem 4.2rem 3rem 0rem;
+        }
+
+        padding-top: 5rem;
+        padding:0 7%;
+        
+        .boomerang-team{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 4rem;
+
+            .boomerang-member{
+                flex: 0 0 16rem;
+                padding-top: 16rem;
+            }
+
+            h3{
+                padding-top: 1.5rem;
+                font-size: 1.8rem;
+            }
+            h3+span{
+                color: gray;
+                font-size: 1.6rem;
+            }
+
+            .boomerang-member.the-md{
+                background: url($medium+'tantum-managing-director.jpg') no-repeat;
+            }
+            .boomerang-member.the-crm{
+                background: url($medium+'tantum-relation-ship-manager.jpg') no-repeat;
+            }
+            .boomerang-member.the-pm{
+                background: url($medium+'tantum-project-manager.jpg') no-repeat;
+            }
+            .boomerang-member.the-fc{
+                background: url($medium+'tantum-finance-controller.jpg') no-repeat;
+            }
+            .boomerang-member.the-mm{
+                background: url($medium+'tantum-marketing-manager.jpg') no-repeat;
+            }
+            .boomerang-member.the-oa{
+                background: url($medium+'tantum-office-admin.jpg') no-repeat;
+            }
+            .boomerang-member.the-pd{
+                background: url($medium+'tantum-product-dev-manager.jpg') no-repeat;
+            }
+        }
+    }
         
     }
 }
@@ -195,6 +262,59 @@ main.boomerang-about-us {
             }
         }
 
+         .boomerang-the-team{
+        
+        h2{
+            font:4.2rem/1 "Museo Slab 700";
+            color: #176574;
+            padding: 2.5rem 4.2rem 3rem 0rem;
+        }
+
+        padding-top: 5rem;
+        padding:0 7%;
+        
+        .boomerang-team{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 6rem;
+
+            .boomerang-member{
+                flex: 0 0 18rem;
+                padding-top: 19rem;
+            }
+            h3{
+                padding-top: 1.5rem;
+                font-size: 2rem;
+            }
+            h3+span{
+                color: gray;
+                font-size: 1.6rem;
+            }
+
+            .boomerang-member.the-md{
+                background: url($large+'tantum-managing-director.jpg') no-repeat;
+            }
+            .boomerang-member.the-crm{
+                background: url($large+'tantum-relation-ship-manager.jpg') no-repeat;
+            }
+            .boomerang-member.the-pm{
+                background: url($large+'tantum-project-manager.jpg') no-repeat;
+            }
+            .boomerang-member.the-fc{
+                background: url($large+'tantum-finance-controller.jpg') no-repeat;
+            }
+            .boomerang-member.the-mm{
+                background: url($large+'tantum-marketing-manager.jpg') no-repeat;
+            }
+            .boomerang-member.the-oa{
+                background: url($large+'tantum-office-admin.jpg') no-repeat;
+            }
+            .boomerang-member.the-pd{
+                background: url($large+'tantum-product-dev-manager.jpg') no-repeat;
+            }
+        }
+    }
         
         
     }

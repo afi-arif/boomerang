@@ -1,3 +1,260 @@
+$small : "./../../assets/images/small/";
+$medium : "./../../assets/images/medium/";
+$large: "./../../assets/images/large/";
+
 main.boomerang-what-we-do{
-    border: 2px solid yellow;
+    margin-bottom: 6rem;
+    .boomerang-flash{
+        background:  url($small + 'babool.jpg') no-repeat right bottom 2rem,  url($small + 'boomerang-what-we-do.jpg') no-repeat right top,  #ffd101;
+        min-height: 17.8rem;
+        padding-bottom: 2rem;
+
+        .boomerang-flash-content{
+            padding: 2rem;
+            padding-right: 10rem;
+
+            h1{
+                color: #fff;
+                font:2.4rem/1 "Museo Slab 700";
+                margin-bottom: 2rem;
+            }
+
+            p:first-of-type{
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font:1.3rem/1.2 "Museo Sans 300";
+                color: #fff;
+            }
+
+            button{
+                background: transparent;
+                margin: 0;
+                margin-top: 2rem;
+                font: 1.4rem/1 "Museo Sans 300";
+            }
+        }
+
+    }
+
+    .boomerang-how-it-works{
+
+        background:  url($small + 'what-we-do.jpg') no-repeat right 4rem bottom;
+         h2{
+            font:2.4rem/1 "Museo Slab 700";
+            color: #000;
+            padding: 1.5rem 4.2rem 2rem 0;
+        }
+        
+        p{
+            font:1.3rem/1.3 "Museo Sans 300";
+            color: #000;
+            margin-bottom: 1rem;
+        }
+         p strong{
+            font:1.3rem/1.3 "Museo Sans 700";
+        }
+        .boomerang-our-works,
+        .boomerang-our-services{
+            padding: 2rem;
+            margin: -2rem 10% 0 15%;
+            background: #fff;
+
+        }
+        .boomerang-our-services{
+            margin-top: 2rem;
+
+            h3{
+                border-bottom: 1px solid #68a688;
+                font:1.3rem/1.3 "Museo Sans 700";
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                white-space: nowrap;
+                span{
+                    background: url("./../../assets/images/arrow-down.svg") right 0.3rem / 1rem auto no-repeat;
+                    padding-right: 1.5rem;
+                }
+               
+            }
+            h3+div{
+                margin-bottom: 2rem;
+            }
+        }
+        
+    }
+
+    .boomerang-forewords{
+        padding: 2rem;
+        width: 22rem;
+        img{
+            margin-bottom: 2rem;
+        }
+        span{
+            display: block;
+            border-bottom: 1px solid #ffd000;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    main.boomerang-what-we-do{
+        .boomerang-flash{
+        background:  url($medium + 'babool.jpg') no-repeat right bottom,  url($medium + 'boomerang-what-we-do.jpg') no-repeat right top,  #ffd101;
+        min-height: 36.4rem;
+
+        .boomerang-flash-content{
+            padding: 3rem;
+            padding-right: 35rem;
+
+            h1{
+                font:3.2rem/1 "Museo Slab 700";
+                margin-bottom: 2rem;
+            }
+
+            p{
+                font:1.6rem/1.2 "Museo Sans 300";
+            }
+
+        }
+
+        }
+        .boomerang-how-it-works{
+
+        background:  url($medium + 'what-we-do.jpg') no-repeat right 9rem bottom;
+         h2{
+            font:3.2rem/1 "Museo Slab 700";
+            color: #000;
+            padding: 1.5rem 4.2rem 2rem 0;
+        }
+        
+        p{
+            font:1.6rem/1.3 "Museo Sans 300";
+            color: #000;
+            margin-bottom: 1rem;
+        }
+         p strong{
+            font:1.6rem/1.3 "Museo Sans 700";
+        }
+        .boomerang-our-works,
+        .boomerang-our-services{
+            padding: 3rem;
+            margin: -3rem 10% 0 15%;
+        }
+        .boomerang-our-services{
+            margin-top: 3rem;
+
+            h3{
+                border-bottom: 1px solid #68a688;
+                font:1.6rem/1.3 "Museo Sans 700";
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                white-space: nowrap;
+                span{
+                    background: url("./../../assets/images/arrow-down.svg") -0.5rem right no-repeat;
+                }
+               
+            }
+            h3+div{
+                margin-bottom: 3rem;
+            }
+        }
+        
+        }
+
+        .boomerang-forewords{
+            padding: 3rem;
+            width: 24rem;
+            img{
+                margin-bottom: 2rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:1024px) {
+     main.boomerang-what-we-do{
+     .boomerang-flash{
+        background:  url($large + 'babool.jpg') no-repeat right bottom 4rem,  url($large + 'boomerang-what-we-do.jpg') no-repeat right top,  #ffd101;
+        min-height: 65.3rem;
+
+        .boomerang-flash-content{
+            padding: 4rem;
+            padding-right: 65.3rem;
+
+            h1{
+                font:4.2rem/1 "Museo Slab 700";
+                margin-bottom: 2rem;
+            }
+
+            p{
+                font:2.4rem/1.2 "Museo Sans 300";
+            }
+
+            button{
+                margin: 0;
+                margin-top: 3rem;
+                font: 1.6rem/1 "Museo Sans 300";
+            }
+
+        }
+
+    }
+    
+    .boomerang-how-it-works{
+
+        background:  url($large + 'what-we-do.jpg') no-repeat right 15rem bottom -10rem;
+         h2{
+            font:4.2rem/1 "Museo Slab 700";
+            color: #000;
+            padding: 1.5rem 4.2rem 2rem 0;
+        }
+        
+        p{
+            font:1.8rem/1.3 "Museo Sans 300";
+            color: #000;
+            margin-bottom: 1rem;
+        }
+         p strong{
+            font:1.8rem/1.3 "Museo Sans 700";
+        }
+        .boomerang-our-works,
+        .boomerang-our-services{
+            padding: 4rem;
+            margin: -5rem 10% 0 12%;
+        }
+        .boomerang-our-services{
+            margin-top: 3rem;
+
+            h3{
+                border-bottom: 1px solid #68a688;
+                font:1.8rem/1.3 "Museo Sans 700";
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                white-space: nowrap;
+                span{
+                    background: url("./../../assets/images/arrow-down.svg") -0.5rem right no-repeat;
+                }
+               
+            }
+            h3+div{
+                margin-bottom: 3rem;
+            }
+        }
+        
+        }
+
+        .boomerang-forewords{
+            padding: 3rem;
+            width: 26rem;
+            font-size: 1.8rem;
+            img{
+                margin-bottom: 2rem;
+            }
+        }
+}
 }

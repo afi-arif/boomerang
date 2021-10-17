@@ -37,17 +37,50 @@ const AboutUs: FC = (): ReactElement => {
                 </div>
             </div>
             <div className="boomerang-the-team">
-                <h2>OurTeam</h2>
+                <h2>Our Team</h2>
                 <div className="boomerang-team">
                     <div className="boomerang-member the-md">
-                        
+                        <div className="profile-info">
+                            <h3>Siraj Deane</h3>
+                            <span>Managing Director</span>
+                        </div>
                     </div>
-                    <div className="boomerang-member the-crm"></div>
-                    <div className="boomerang-member the-pm"></div>
-                    <div className="boomerang-member the-fc"></div>
-                    <div className="boomerang-member the-mm"></div>
-                    <div className="boomerang-member the-oa"></div>
-                    <div className="boomerang-member the-pd"></div>
+                    <div className="boomerang-member the-crm">
+                        <div className="profile-info">
+                            <h3>Tom Baxter</h3>
+                            <span>Client Relationship Manager</span>
+                        </div>
+                    </div>
+                    <div className="boomerang-member the-pm">
+                        <div className="profile-info">
+                            <h3>Oleg Tsarev</h3>
+                            <span>Project Manager</span>
+                        </div>
+                    </div>
+                    <div className="boomerang-member the-fc">
+                        <div className="profile-info">
+                            <h3>Nasser Chaudary</h3>
+                            <span>Financial Controller</span>
+                        </div>
+                    </div>
+                    <div className="boomerang-member the-mm">
+                        <div className="profile-info">
+                            <h3>Eugenia Kovaliova</h3>
+                            <span>Marketing Manager</span>
+                        </div>
+                    </div>
+                    <div className="boomerang-member the-oa">
+                        <div className="profile-info">
+                            <h3>Jennifer Beecroft</h3>
+                            <span>Office Administrator</span>
+                        </div>
+                    </div>
+                    <div className="boomerang-member the-pd">
+                        <div className="profile-info">
+                            <h3>Yazid Yasin</h3>
+                            <span>Product Development & Compliance</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
