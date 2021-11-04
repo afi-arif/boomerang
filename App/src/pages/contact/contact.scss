@@ -1,0 +1,176 @@
+$small : "./../../assets/images/small/";
+$medium : "./../../assets/images/medium/";
+$large: "./../../assets/images/large/";
+
+main.boomerang-contact {
+
+    .boomerang-contact-flash{
+        background: url($small + "boomerang-contact-flash.jpg") no-repeat center;
+        height: 0;
+        background-size: cover;
+        padding-top: 38%;
+    }
+
+    .boomerang-contact-us{
+        padding: 3% 2rem 0 10%;
+        color:#636363;
+
+        h1{
+            font:2.4rem/2 "Museo Slab 700";
+            margin-bottom: 2rem;
+        }
+        p{
+            font: 1.4rem/1.2 'Museo Sans 300'; 
+        }
+    }
+    .boomerang-contact-form{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10% 0 20%;
+        color:#636363;
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            label{
+                width: 100%;
+                display: block;
+                margin-bottom: 1.5rem;
+                span{
+                    display: block;
+                    padding-bottom: 0.5rem;
+                }
+                input[type=text],
+                input[type=tel],
+                input[type=email],
+                select, textarea{
+                    width: 100%;
+                    padding: 0.5rem 1rem;
+                    font-size: 100%;
+                    color:#636363;
+                }
+            }
+            label:nth-of-type(2),
+            label:nth-of-type(3){
+                width: 49%;
+            }
+        }
+
+    }
+    .boomerang-address{
+        margin-bottom: 2rem;
+
+        div:first-child{
+            img {
+                width: 50%;
+                margin: 0 auto;
+                margin-left: -1rem;
+            }
+        }
+        div:last-child{
+            span, a{
+                display: block;
+                color:#636363;
+            }
+            span:last-of-type{
+                margin-bottom: 1rem;
+            }
+            a {
+                margin-bottom: 0.5rem;
+                padding-left:3rem;
+                line-height: 1.5;
+            }
+            a.boomerang-phone{
+                background: url("./../../assets/images/icon-phone.svg") no-repeat left center;
+                background-size: 2rem;
+            }
+             a.boomerang-email{
+                background: url("./../../assets/images/icon-post.svg") no-repeat left center;
+                background-size: 2rem;
+            }
+             a.boomerang-map{
+                background: url("./../../assets/images/icon-location.svg") no-repeat left center;
+                background-size: 2rem;
+                line-height: 2;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    main.boomerang-contact {
+        .boomerang-contact-flash{
+            background: url($medium + "boomerang-contact-flash.jpg") no-repeat center;
+            background-size: cover;
+        }
+        .boomerang-contact-us{
+            h1{
+                font:3.2rem/1 "Museo Slab 700";
+                margin-right: 7rem;
+            }
+            p{
+                font: 1.6rem/1.2'Museo Sans 300'; 
+            }
+        }
+        .boomerang-address{
+            display: flex;
+
+            div:first-child{
+                img {
+                    width: 20rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+     main.boomerang-contact {
+        .boomerang-contact-flash{
+            background: url($large + "boomerang-contact-flash.jpg") no-repeat center;
+            background-size: cover;
+        }
+        .boomerang-contact-us{
+            h1{
+                font:4.8rem/1 "Museo Slab 700";
+            }
+            p{
+                font: 1.8rem/1.2 'Museo Sans 300';
+            }
+        }
+        .boomerang-contact-form{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            form{
+                width: 50%;
+                label{
+                    margin-bottom: 5rem;
+                }
+            }
+
+            .boomerang-address{
+                display: flex;
+                justify-content: right;
+
+                div:first-child{
+                    
+                    img {
+                        width: 15rem;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        
+     }
+    
+}
