@@ -1,14 +1,30 @@
-import React, { FC, } from "react";
+import React, { FC, useEffect, useState, } from "react";
 import "./barkingRoad.scss";
-
-// import slide from "./../../../../assets/images/small/boomerang-site1.jpg";
+import { useWindowDimensions } from "./../../../../hooks/windowDimensions";
+import { barkingRoadProject } from "./../../../../datas/slide-data";
 
 const BarkingRoad: FC = () => {
+    const { root } = useWindowDimensions('Barking-Road');
+    const [slide, setSlide] = useState('');
+    const [slideNo, setSlideNo] = useState(0);
 
+    useEffect(() => {
+        setSlide(root + barkingRoadProject[slideNo]);
+    }, [root, slideNo]);
 
+    const prevSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
+        event.preventDefault();
+        if (slideNo < 1) return;
+        setSlideNo(slideNo - 1);
+    }
 
-    // const imgURL = "/src/assets/images/small/boomerang-site1.jpg";
-    const imgURL = "/src/assets/images/small/video-place-holder.jpg";
+    const nextSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
+        event.preventDefault();
+        if (slideNo < barkingRoadProject.length - 1) {
+            setSlideNo(slideNo + 1);
+        }
+
+    }
 
     return (
         <div className="boomerang-slider-barkingRoad">
@@ -117,12 +133,11 @@ const BarkingRoad: FC = () => {
                     </tbody>
                 </table>
                 <div className="boomerang-site-slide">
-                    <div className="prev"><a href="#">Previus</a> </div>
+                    <div className="prev" onClick={prevSlide}><a href="#">Previus</a> </div>
                     <div>
-                        <img src={imgURL} />
+                        <img src={slide} />
                     </div>
-                    <div className="next"><a href="#">Next</a> </div>
-                    {/* srcSet={`${slide} 360w, ${slide} 768w, ${slide} 1366w  `} */}
+                    <div className="next" onClick={nextSlide}><a href="#">Next</a> </div>
                 </div>
             </div>
 
