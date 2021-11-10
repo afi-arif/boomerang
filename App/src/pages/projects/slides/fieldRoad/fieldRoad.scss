@@ -2,14 +2,13 @@ $small : "./../../../../assets/images/small/";
 $medium : "./../../../../assets/images/medium/";
 $large: "./../../../../assets/images/large/";
 
-.BarkingRoad .boomerang-slide-holder{
-    background: url($small + "bg-BarkingRoad.jpg") no-repeat right 3rem top 27rem;
+.FieldRoad .boomerang-slide-holder{
+    background: url($small + "bg-FieldRoad.jpg") no-repeat right 3rem top 27rem;
 }
 
-.boomerang-slider-barkingRoad{
+.boomerang-slider-fieldRoad{
    
     padding: 0 0 3rem 2.5rem;
-
 
     .project-info{
         background: #fff;
@@ -93,10 +92,10 @@ $large: "./../../../../assets/images/large/";
 
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-    .BarkingRoad .boomerang-slide-holder{
-        background: url($medium + "bg-BarkingRoad.jpg") no-repeat right 3rem top 27rem;
+   .FieldRoad .boomerang-slide-holder{
+        background: url($medium + "bg-FieldRoad.jpg") no-repeat right 3rem top 27rem;
     }
-    .boomerang-slider-barkingRoad{
+    .boomerang-slider-fieldRoad{
         padding: 0 0 3rem 2.5rem;
         .project-info{
             margin-bottom: 4.5rem;
@@ -130,11 +129,11 @@ $large: "./../../../../assets/images/large/";
 
 @media screen and (min-width:1024px) {
       
-    .BarkingRoad .boomerang-slide-holder{
-        background: url($large + "bg-BarkingRoad.jpg") no-repeat right 3rem top 48rem;
+    .FieldRoad .boomerang-slide-holder{
+        background: url($large + "bg-FieldRoad.jpg") no-repeat right 3rem top 48rem;
     }
 
-    .boomerang-slider-barkingRoad{
+    .boomerang-slider-fieldRoad{
         padding: 0 0 3rem 0.5rem;
         .project-info{
             padding: 4rem; 

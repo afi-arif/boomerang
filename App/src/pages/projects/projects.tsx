@@ -1,13 +1,18 @@
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "./projects.scss"
 import BarkingRoad from "./slides/barkingRoad/barkingRoad";
 import FieldRoad from "./slides/fieldRoad/fieldRoad";
 import KatherineRoad from "./slides/katherineRoad/katherineRoad";
 
 const Projects: FC = () => {
-
     const slides = ['BarkingRoad', 'FieldRoad', 'KatherineRoad'];
-    const [slide, setSlide] = useState(0);
+    const [slide, setSlide] = useState<number>(0);
+    const [slideTitle, setSlideTitle] = useState('');
+
+    useEffect(() => {
+        const Titles = ['Barking Road, London', 'Field Road, London', 'Katherine Road, London'];
+        setSlideTitle(Titles[slide]);
+    }, [slide]);
 
     const slidePrev = () => {
         if (slide <= 0) return;
@@ -37,7 +42,7 @@ const Projects: FC = () => {
 
 
     return (
-        <main className="boomerang-projects">
+        <main className={`boomerang-projects ${slides[slide]}`}>
             <div className="boomerang-projects-flash">
                 <h1>Projects</h1>
             </div>
@@ -47,7 +52,7 @@ const Projects: FC = () => {
                     <div className="slider-column">
                         <div className="slider">
                             <a className="prev" onClick={slidePrev}>Previous</a>
-                            <h2>Barking Road, London</h2>
+                            <h2>{slideTitle}</h2>
                             <a className="next" onClick={slideNext}>Next</a>
                         </div>
                         {

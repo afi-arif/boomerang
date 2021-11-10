@@ -133,7 +133,7 @@ const BarkingRoad: FC = () => {
                     </tbody>
                 </table>
                 <div className="boomerang-site-slide">
-                    <div className="prev" onClick={prevSlide}><a href="#">Previus</a> </div>
+                    <div className="prev" onClick={prevSlide}><a href="#">Previous</a> </div>
                     <div>
                         <img src={slide} />
                     </div>
