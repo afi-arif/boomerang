@@ -1,29 +1,21 @@
-import React, { FC, useEffect, useState, } from "react";
+import React, { FC, } from "react";
 import "./barkingRoad.scss";
-import { useWindowDimensions } from "./../../../../hooks/windowDimensions";
-import { barkingRoadProject } from "./../../../../datas/slide-data";
+
+import SlideService from "./../../../../service/slide-service";
 
 const BarkingRoad: FC = () => {
-    const { root } = useWindowDimensions('Barking-Road');
-    const [slide, setSlide] = useState('');
-    const [slideNo, setSlideNo] = useState(0);
 
-    useEffect(() => {
-        setSlide(root + barkingRoadProject[slideNo]);
-    }, [root, slideNo]);
+    const [slide, slideNo, setSlideNo] = SlideService('Barking-Road');
 
     const prevSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
         event.preventDefault();
-        if (slideNo < 1) return;
         setSlideNo(slideNo - 1);
+
     }
 
     const nextSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
         event.preventDefault();
-        if (slideNo < barkingRoadProject.length - 1) {
-            setSlideNo(slideNo + 1);
-        }
-
+        setSlideNo(slideNo + 1);
     }
 
     return (

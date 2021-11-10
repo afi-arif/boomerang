@@ -1,28 +1,30 @@
-// import { barkingRoadProject } from "./../datas/slide-data";
-// import { useWindowDimensions } from "./../hooks/windowDimensions";
+import React, { useState, useEffect, Dispatch, SetStateAction } from "react";
+import { SlideSupply } from "./../datas/slide-data";
+import { useWindowDimensions } from "./../hooks/windowDimensions";
 
-// const SlideService = () => {
-//     const { root } = useWindowDimensions('Barking-Road');
+interface PropsSlide {
+    values: readonly [string, number, Dispatch<SetStateAction<number>>];
+}
 
-//     useEffect(() => {
-//         setSlide(root + barkingRoadProject[slideNo]);
-//     }, [root, slideNo]);
+const SlideService = (slideName: string): PropsSlide["values"] => {
 
+    const [slide, setSlide] = useState('');
+    const [slideNo, setSlideNo] = useState(0);
+    const { root } = useWindowDimensions(slideName);
 
-//     const prevSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
-//         event.preventDefault();
-//         if (slideNo < 1) return;
-//         setSlideNo(slideNo - 1);
-//     }
+    useEffect(() => {
+        const slidesStore = SlideSupply(slideName);
+        if (slideNo < 0) {
+            setSlideNo(0);
+        }
+        if (slideNo > slidesStore.length - 1) {
+            setSlideNo(slidesStore.length - 1)
+        }
+        setSlide(root + slidesStore[slideNo]);
+    }, [root, setSlide, slideNo, slideName]);
 
-//     const nextSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
-//         event.preventDefault();
-//         if (slideNo < barkingRoadProject.length - 1) {
-//             setSlideNo(slideNo + 1);
-//         }
+    return [slide, slideNo, setSlideNo] as const;
 
-//     }
+}
 
-// }
-
-// export default SlideService;
+export default SlideService;

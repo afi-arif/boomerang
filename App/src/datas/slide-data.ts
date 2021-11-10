@@ -1,1 +1,7 @@
-export const barkingRoadProject = ['boomerang-site1.jpg', 'boomerang-site2.jpg', 'boomerang-site3.jpg'];
+const slides: { [key: string]: string[] } = {
+    "Barking-Road": ['boomerang-site1.jpg', 'boomerang-site2.jpg', 'boomerang-site3.jpg']
+}
+
+export const SlideSupply = (slideName: string): string[] => {
+    return slides[slideName];
+}
