@@ -1,7 +1,22 @@
 import React, { FC } from "react";
 import "./fieldRoad.scss";
+import SlideService from "./../../../../service/slide-service";
 
 const FieldRoad: FC = () => {
+
+    const [slide, slideNo, setSlideNo] = SlideService('Field-Road');
+
+    const prevSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
+        event.preventDefault();
+        setSlideNo(slideNo - 1);
+
+    }
+
+    const nextSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
+        event.preventDefault();
+        setSlideNo(slideNo + 1);
+    }
+
     return (
         <div className="boomerang-slider-fieldRoad">
             <div className="project-info">
@@ -108,7 +123,11 @@ const FieldRoad: FC = () => {
                     </tbody>
                 </table>
                 <div className="boomerang-site-slide">
-
+                    <div className="prev" onClick={prevSlide}><a href="#">Previous</a> </div>
+                    <div>
+                        <img src={slide} />
+                    </div>
+                    <div className="next" onClick={nextSlide}><a href="#">Next</a> </div>
                 </div>
             </div>
 

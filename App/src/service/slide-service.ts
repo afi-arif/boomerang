@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Dispatch, SetStateAction } from "react";
+import { useState, useEffect, Dispatch, SetStateAction } from "react";
 import { SlideSupply } from "./../datas/slide-data";
 import { useWindowDimensions } from "./../hooks/windowDimensions";
 
