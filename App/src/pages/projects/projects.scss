@@ -50,6 +50,21 @@ main.boomerang-projects{
                 margin:0 4rem;            }
         }
     }
+    .project-foot-notes{
+        font:1.4rem/1 "Museo Sans 300";
+        margin: 5rem 0 4.5rem 0;
+        padding-left: 3rem;
+        ul{
+            margin-right: 40%;
+            li{
+                border-bottom: 0.1rem solid #ffd200;
+                padding: 1.5rem 20% 1.5rem 0;
+            }
+            li:last-child{
+                border: 0;
+            }
+        }
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -87,6 +102,11 @@ main.boomerang-projects{
                  }
             }
         }
+        .project-foot-notes{
+            font:1.8rem/1 "Museo Sans 300";
+            margin-bottom: 15rem;
+        }
+    
     }
 }
 
@@ -136,6 +156,11 @@ main.boomerang-projects{
                     margin: 0;
                  }
             }
+        }
+        .project-foot-notes{
+            max-width: 50%;
+            margin-bottom: 23rem;
+            font:2.2rem/1.2 "Museo Sans 300";
         }
     }
 }

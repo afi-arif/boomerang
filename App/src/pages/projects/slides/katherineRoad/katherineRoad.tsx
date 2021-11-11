@@ -6,6 +6,7 @@ const KatherineRoad: FC = () => {
 
     const [slide, slideNo, setSlideNo] = SlideService('Katherine-Road');
 
+
     const prevSlide = (event: React.MouseEvent<Element | MouseEvent>): void => {
         event.preventDefault();
         setSlideNo(slideNo - 1);
@@ -19,12 +20,13 @@ const KatherineRoad: FC = () => {
 
 
     return (
+
         <div className="boomerang-slider-katherineRoad">
             <div className="project-info">
-                <p>Purchased as a semi-commercial unit consisting of two shops and a one bedroom flat, we undertook a significant amount of due diligence prior to purchase to ensure we would be able to attain planning permission for an additional apartment within this Field Road property.</p>
-                <p>However, our first planning application in November 2018 was refused; but thanks to the significant amount of background work we’d performed prior to purchase, we resubmitted our application with a number of minor amendments, going all the way throug h to appeal at which planning permission was ultimately granted.</p>
-                <p>While it took us rather longer than projected to undertake redevelopment of the property as a result of the planning delays, we were confident in the research we’d conducted prior to purchase and so, stuck with it.</p>
-                <p>This ultimately more than paid off for our client, who saw the value of their property increase by 60% upon completion of development works!</p>
+                <p>This Katherine Road property represented something of a departure from the norm for us, as our client commissioned us to secure an investment property on this specific street, which at first seemed like something of a tall order!</p>
+                <p>Originally consisting of a ground floor office and small first floor flat in an end-of-terrace property, we redeveloped the first floor and attic into a large, modern two-storey apartment as well as undertaking improvement works on the commercial premises below.</p>
+                <p>The commercial premises is now occupied under the terms of a 20-year lease, proving a secure, guaranteed rental income for its landlord, and the residential apartment is rented out under the terms of an shorthold tenancy.</p>
+                <p>We completed the development works on time and within budget, and as well as offering two streams of rental income, our work also increased the value of the asset itself. This resulted in a significant proportion of the client’s initial investment being returned to them far faster than is possible for traditional buy-to-let operations.</p>
             </div>
             <div className="project-data">
                 <table>
@@ -39,21 +41,21 @@ const KatherineRoad: FC = () => {
                     <tbody>
                         <tr>
                             <td>Purchase Price</td>
-                            <td>350.00</td>
-                            <td>215.00</td>
-                            <td>565.00</td>
+                            <td>315.00</td>
+                            <td>148.50</td>
+                            <td>463.50</td>
                         </tr>
                         <tr>
                             <td>Development Cost</td>
                             <td>-</td>
-                            <td>136.50</td>
-                            <td>136.50</td>
+                            <td>109.00</td>
+                            <td>109.00</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>350.50</td>
-                            <td>351.50</td>
-                            <td>701.50</td>
+                            <td>315.00</td>
+                            <td>257.50</td>
+                            <td>572.50</td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -65,13 +67,13 @@ const KatherineRoad: FC = () => {
                             <td>Property Value Post Development</td>
                             <td></td>
                             <td></td>
-                            <td>800.00</td>
+                            <td>650.00</td>
                         </tr>
                         <tr>
                             <td>Profit</td>
                             <td></td>
                             <td></td>
-                            <td>98.50</td>
+                            <td>77.50</td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -89,25 +91,25 @@ const KatherineRoad: FC = () => {
                             <td>Re-finace @ 75% Post Development Value</td>
                             <td></td>
                             <td></td>
-                            <td>600.00</td>
+                            <td>487.50</td>
                         </tr>
                         <tr>
                             <td>Less: 1st Charge Loan</td>
                             <td></td>
                             <td></td>
-                            <td>- 350.00</td>
+                            <td>- 315.00</td>
                         </tr>
                         <tr>
                             <td>Less: Your Initial Investment</td>
                             <td></td>
                             <td></td>
-                            <td>- 351.50</td>
+                            <td>- 257.50</td>
                         </tr>
                         <tr>
                             <td>Client Contribution</td>
                             <td></td>
                             <td></td>
-                            <td>-101.50</td>
+                            <td>-85.00</td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -119,7 +121,7 @@ const KatherineRoad: FC = () => {
                             <td>Annual Rental Income</td>
                             <td></td>
                             <td></td>
-                            <td>44.40</td>
+                            <td>37.20</td>
                         </tr>
                     </tbody>
                 </table>
@@ -131,8 +133,8 @@ const KatherineRoad: FC = () => {
                     <div className="next" onClick={nextSlide}><a href="#">Next</a> </div>
                 </div>
             </div>
-
         </div>
+
     )
 }
 

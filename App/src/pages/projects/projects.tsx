@@ -1,4 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useWindowDimensions } from "../../hooks/windowDimensions";
 import "./projects.scss"
 import BarkingRoad from "./slides/barkingRoad/barkingRoad";
 import FieldRoad from "./slides/fieldRoad/fieldRoad";
@@ -8,6 +10,7 @@ const Projects: FC = () => {
     const slides = ['BarkingRoad', 'FieldRoad', 'KatherineRoad'];
     const [slide, setSlide] = useState<number>(0);
     const [slideTitle, setSlideTitle] = useState('');
+    const { root } = useWindowDimensions('boomerang-buy-2-let.jpg');
 
     useEffect(() => {
         const Titles = ['Barking Road, London', 'Field Road, London', 'Katherine Road, London'];
@@ -48,7 +51,7 @@ const Projects: FC = () => {
             </div>
             <div className="boomerang-projects-info">
                 <div className="boomerang-slide-holder">
-                    <div><button>Contact</button></div>
+                    <div><Link to="/contact"><button>Contact</button></Link></div>
                     <div className="slider-column">
                         <div className="slider">
                             <a className="prev" onClick={slidePrev}>Previous</a>
@@ -60,6 +63,14 @@ const Projects: FC = () => {
                         }
                     </div>
                 </div>
+            </div>
+            <div className="project-foot-notes">
+                <img src={root} alt="logo boomerang-buy-2-let" />
+                <ul>
+                    <li>Boosts the asset value within short period</li>
+                    <li>High rental yield</li>
+                    <li>Unlock your deposit</li>
+                </ul>
             </div>
         </main >
     )
