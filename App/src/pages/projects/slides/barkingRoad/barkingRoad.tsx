@@ -87,7 +87,7 @@ const BarkingRoad: FC = () => {
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Re-finace @ 75% Post Development Value</td>
+                            <td>Re-finance @ 75% Post Development Value</td>
                             <td></td>
                             <td></td>
                             <td>975.00</td>

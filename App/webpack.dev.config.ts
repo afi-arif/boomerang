@@ -1,7 +1,7 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import webpack, { Configuration as WebpackConfiguration } from "webpack";
-import { Configuration as WebpackDevServerConfiguration } from "webpack-dev-server";
+import webpack, {Configuration as WebpackConfiguration} from "webpack";
+import {Configuration as WebpackDevServerConfiguration} from "webpack-dev-server";
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import ESLintPlugin from "eslint-webpack-plugin";
 
@@ -37,7 +37,7 @@ const config: Configuration = {
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/i,
-                dependency: { not: ['url'] },
+                dependency: {not: ['url']},
                 type: "asset/resource"
             },
             {
@@ -69,6 +69,9 @@ const config: Configuration = {
         })
     ],
     devtool: "inline-source-map",
+    stats: {
+        children: true
+    },
     devServer: {
         contentBase: path.join(__dirname, "build"),
         historyApiFallback: true,
