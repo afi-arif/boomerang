@@ -1,4 +1,5 @@
 @import 'reset';
+@import url(./../assets/fonts/fonts.css);
 @import 'layout';
 @import 'media';
 
@@ -6,7 +7,7 @@
 button {
     border: 1px solid #000;
     background: #fff;
-    font:1.6rem/1 "Museo Sans 300";
+    font:1.6rem/1 "Museo Slab 300";
     padding: 1rem 3rem;
     margin: 4rem auto;
     display: block;
